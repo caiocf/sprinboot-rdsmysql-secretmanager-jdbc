@@ -4,8 +4,9 @@ A Spring Boot application uses the secret name to access the database username a
 
 The Spring Boot application connects to the RDS database using the credential it retrieves from AWS Secrets Manager using AWS Java SDK.
 
+Video Youtube https://www.youtube.com/watch?v=N_4JmLH4ylc
 
-For use AWS Secret Manager  you need create user IAM Programming and configure environment variables [https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html].
+For use AWS Secret Manager  you need create user IAM Programming and configure environment variables https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html.
 
 Windows:
 
