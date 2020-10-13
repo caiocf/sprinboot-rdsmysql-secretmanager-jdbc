@@ -16,10 +16,11 @@ public class ApiwebApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ApiwebApplication.class, args);
+        java.security.Security.setProperty("networkaddress.cache.ttl" , "15");
     }
 
     @Scheduled(fixedDelay = 1000l)
     public void foo(){
-        System.out.println(jdbcTemplate.queryForObject("select 1", String.class));
+        System.out.println(jdbcTemplate.queryForObject("select curtime()", String.class));
     }
 }
